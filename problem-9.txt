@@ -1,9 +1,11 @@
 //title-9 palindrome number (leetcode-9)
-#include<stdio.h>
+
+solution:
+
 bool isPalindrome(int x) {
-    long res=0;
+    long res=0;                  //long is used to check larger user input
     int temp = x;
-    while(temp!=0 && temp>0)
+    while(temp!=0 && temp>0)    //temop>0 used for taking only +ve integer
     {
         int r = temp%10;
         res = res*10+r;
@@ -17,8 +19,4 @@ bool isPalindrome(int x) {
     {
         return false;
     }
-}
-void main()
-{
-    isPalindrome();
 }
